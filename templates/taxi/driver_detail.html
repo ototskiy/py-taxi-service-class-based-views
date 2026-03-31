@@ -10,6 +10,8 @@
       <hr>
       <p class="test-muted">{{ car.id }}</p>
       <p class="test-muted">{{ car.model }}</p>
+      <p class="test-muted">{{ car.manufacturer.name }} manufacturer</p>
+      <p class="test-muted">{{ car.manufacturer.country }}</p>
     {% empty %}
       <p>No cars!</p>
     {% endfor %}
