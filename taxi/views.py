@@ -34,7 +34,7 @@ class DriverDetailView(generic.DetailView):
 
 class CarListView(generic.ListView):
     model = Car
-    queryset = Car.objects.all().order_by("manufacturer")
+    queryset = Car.objects.select_related("manufacturer")
     paginate_by = 5
 
 
